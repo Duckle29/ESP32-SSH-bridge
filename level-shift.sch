@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:ESP32-SSH-bridge-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -14,23 +15,23 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Interface_UART:MAX232I U?
+L Interface_UART:MAX232I U1
 U 1 1 5B89DB5C
 P 5525 3900
-F 0 "U?" H 4975 4950 50  0000 C CNN
+F 0 "U1" H 4975 4950 50  0000 C CNN
 F 1 "MAX232I" H 5975 4950 50  0000 C CNN
-F 2 "" H 5575 2850 50  0001 L CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 5575 2850 50  0001 L CNN
 F 3 "http://www.ti.com/lit/ds/symlink/max232.pdf" H 5525 4000 50  0001 C CNN
 	1    5525 3900
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C2
 U 1 1 5B89DB63
 P 4675 3150
-F 0 "C?" H 4583 3104 50  0000 R CNN
+F 0 "C2" H 4583 3104 50  0000 R CNN
 F 1 "1uF" H 4583 3195 50  0000 R CNN
-F 2 "" H 4675 3150 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4675 3150 50  0001 C CNN
 F 3 "~" H 4675 3150 50  0001 C CNN
 	1    4675 3150
 	1    0    0    1   
@@ -44,12 +45,12 @@ Wire Wire Line
 Wire Wire Line
 	4675 3300 4725 3300
 $Comp
-L Device:C_Small C?
+L Device:C_Small C3
 U 1 1 5B89DB6E
 P 6375 3150
-F 0 "C?" H 6467 3196 50  0000 L CNN
+F 0 "C3" H 6467 3196 50  0000 L CNN
 F 1 "1uF" H 6467 3105 50  0000 L CNN
-F 2 "" H 6375 3150 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6375 3150 50  0001 C CNN
 F 3 "~" H 6375 3150 50  0001 C CNN
 	1    6375 3150
 	1    0    0    -1  
@@ -63,23 +64,23 @@ Wire Wire Line
 Wire Wire Line
 	6375 3300 6375 3250
 $Comp
-L Device:C_Small C?
+L Device:C_Small C5
 U 1 1 5B89DB79
 P 6475 3800
-F 0 "C?" V 6375 3800 50  0000 C CNN
+F 0 "C5" V 6375 3800 50  0000 C CNN
 F 1 "1uF" V 6575 3800 50  0000 C CNN
-F 2 "" H 6475 3800 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6475 3800 50  0001 C CNN
 F 3 "~" H 6475 3800 50  0001 C CNN
 	1    6475 3800
 	0    1    -1   0   
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C4
 U 1 1 5B89DB80
 P 6475 3500
-F 0 "C?" V 6350 3500 50  0000 C CNN
+F 0 "C4" V 6350 3500 50  0000 C CNN
 F 1 "1uF" V 6575 3500 50  0000 C CNN
-F 2 "" H 6475 3500 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6475 3500 50  0001 C CNN
 F 3 "~" H 6475 3500 50  0001 C CNN
 	1    6475 3500
 	0    1    -1   0   
@@ -110,10 +111,10 @@ Wire Wire Line
 Wire Wire Line
 	4725 4200 4625 4200
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0112
 U 1 1 5B89E047
 P 6775 3725
-F 0 "#PWR?" H 6775 3475 50  0001 C CNN
+F 0 "#PWR0112" H 6775 3475 50  0001 C CNN
 F 1 "GND" H 6780 3552 50  0000 C CNN
 F 2 "" H 6775 3725 50  0001 C CNN
 F 3 "" H 6775 3725 50  0001 C CNN
